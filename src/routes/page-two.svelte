@@ -1,8 +1,7 @@
-<script>
+<svelte:head>
+	<title>Page two - My SvelteKit test site</title>
+</svelte:head>
 
-import Counter from "$lib/Counter.svelte";
-
-</script>
 <main>
 	<p>
 		Creating a second page is as easy as 1-2-...

@@ -11,13 +11,18 @@
 		const { filename } = page.params
 		// PROBLEM: This doesn't work if you remove the "http://localhost:3000"!
 		const html = (await (await fetch(`http://localhost:3000/api/content/${filename}`)).text())
-		return { props: { html } }
+		return { props: { title: filename, html } }
 	}
 </script>
 
 <script lang="ts">
+	export let title: string
 	export let html: string
 </script>
+
+<svelte:head>
+	<title>{title} - My SvelteKit test site</title>
+</svelte:head>
 
 <main>
 	{@html html}
