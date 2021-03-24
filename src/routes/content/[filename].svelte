@@ -1,17 +1,17 @@
 <script context="module" lang="ts">
-	import MarkdownIt from "markdown-it"
-
-	const md = new MarkdownIt({
-		html: true,
-		linkify: true,
-		quotes: "“”‘’",
-		typographer: true,
-	})
-
 	export async function load({ page, fetch, session, context })
 	{
-		const html = md.render(`Hello this is **${page.params.filename}** rendered using Markdown`)
-		return { props: { filename: page.params.filename, html: html } }
+		// So, you can't...
+		// * use server code here
+		// * import anything here from server code 
+		// * know what URL you're on in server.ts
+
+		// So limited compared to Next.js!
+
+		const { filename } = page.params
+		// PROBLEM: This doesn't work if you remove the "http://localhost:3000"!
+		const html = (await (await fetch(`http://localhost:3000/api/content/${filename}`)).text())
+		return { props: { html } }
 	}
 </script>
 
