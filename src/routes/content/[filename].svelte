@@ -3,15 +3,11 @@
 
 	export async function load({ page, fetch }: LoadInput): Promise<LoadOutput>
 	{
-		// Here, you can't...
-		// * use server code here
-		// * import anything here from server code
-		// * know what URL you're on in server.ts
-		// So limited compared to Next.js!
-
-		const { filename } = page.params
-		// PROBLEM: This doesn't work if you remove the "http://localhost"!
-		const data = (await (await fetch(`http://localhost/api/content/${filename}`)).json())
+		const filename = page.params.filename
+		// PROBLEM: This doesn't work if you remove the "http://localhost"! You get a string starting with
+		// the text "Not found", which of course isn't valid JSON.
+		// But, fetching the exact same URL using the browser fetch() works fine.
+		const data = (await (await fetch(`/api/content/${filename}`)).json())
 		const { properties, html } = data
 		return { props: { title: properties.title || filename, html } }
 	}
