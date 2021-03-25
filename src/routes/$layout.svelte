@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Year from "$lib/components/Year.svelte"
+</script>
+
 <header>
 <div><nav>
 	<ul>
@@ -14,7 +18,7 @@
 
 <footer>
 <p>
-	Template &copy; 2021 Travis Spomer.
+	Template &copy; <Year from={2021} /> Travis Spomer.
 </p>
 </footer>
 
