@@ -24,6 +24,4 @@
 	<title>{title} - My SvelteKit test site</title>
 </svelte:head>
 
-<main>
-	{@html html}
-</main>
+{@html html}
