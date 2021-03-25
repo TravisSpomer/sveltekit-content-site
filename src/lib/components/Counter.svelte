@@ -4,14 +4,16 @@
 	const increment = () => count += 1
 </script>
 
-<button on:click={increment}>
+<button class="accent" on:click={increment}>
 	Clicks: {count}
 </button>
 
 <style lang="scss">
-	button {
-		padding: 1em 2em;
-		width: 200px;
-		font-variant-numeric: tabular-nums;
-	}
+
+button
+{
+	padding: 1em 2em;
+	width: 200px;
+}
+
 </style>

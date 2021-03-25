@@ -1,15 +1,15 @@
 <script lang="ts">
-	import Counter from '$lib/components/Counter.svelte'
+	import Counter from "$lib/components/Counter.svelte"
 </script>
 
 <svelte:head>
 	<title>My SvelteKit test site</title>
 </svelte:head>
 
-<h1>Hello world!</h1>
+<h1>Imagine... a button that you can click to add 1!</h1>
 
 <Counter />
 
 <p>
-	Visit <a href="/page-two">page two</a> if you want your MIND BLOWN.
+	Now visit <a href="/page-two">page two</a> if you want your <strong>MIND BLOWN</strong>.
 </p>

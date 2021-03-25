@@ -1,5 +1,5 @@
 {
-	"name": "sveltekit-demo",
+	"name": "sveltekit-content-site",
 	"version": "0.0.1",
 	"private": true,
 	"devDependencies": {
@@ -7,6 +7,10 @@
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"@types/markdown-it": "^12.0.1",
+		"@typescript-eslint/eslint-plugin": "^4.19.0",
+		"@typescript-eslint/parser": "^4.19.0",
+		"eslint": "^7.22.0",
+		"eslint-plugin-svelte3": "^3.1.2",
 		"gray-matter": "^4.0.2",
 		"markdown-it": "^12.0.4",
 		"sass": "^1.32.8",

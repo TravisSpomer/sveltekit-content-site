@@ -1,9 +1,11 @@
 <script context="module" lang="ts">
-	export async function load({ page, fetch, session, context })
+	import type { LoadInput, LoadOutput } from "@sveltejs/kit/types.internal"
+
+	export async function load({ page, fetch }: LoadInput): Promise<LoadOutput>
 	{
 		// Here, you can't...
 		// * use server code here
-		// * import anything here from server code 
+		// * import anything here from server code
 		// * know what URL you're on in server.ts
 		// So limited compared to Next.js!
 

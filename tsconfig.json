@@ -1,28 +1,42 @@
 {
+	"compileOnSave": false,
 	"compilerOptions": {
-		"moduleResolution": "node",
-		"target": "es2018",
-		/**
-			svelte-preprocess cannot figure out whether you have a value or a type, so tell TypeScript
-			to enforce using \`import type\` instead of \`import\` for Types.
-			*/
+		"allowJs": true,
+		"alwaysStrict": true,
+		"baseUrl": ".",
+		"checkJs": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
 		"importsNotUsedAsValues": "error",
 		"isolatedModules": true,
-		/**
-			To have warnings/errors of the Svelte compiler at the correct position,
-			enable source maps by default.
-			*/
-		"sourceMap": true,
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true,
-		"baseUrl": ".",
-		"allowJs": true,
-		"checkJs": true,
+		"lib": [ "ES2017", "dom" ],
+		"module": "ES6",
+		"moduleResolution": "node",
+		"noEmit": true,
+		"noEmitOnError": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
 		"paths": {
 			"$app/*": [".svelte/dev/runtime/app/*", ".svelte/build/runtime/app/*"],
 			"$lib/*": ["src/lib/*"]
-		}
+		},
+		"removeComments": true,
+		"rootDir": "src",
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"strictNullChecks": true,
+		"target": "es2018"
 	},
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
+	"include": [
+		"src/**/*.js",
+		"src/**/*.ts",
+		"src/**/*.svelte"
+	],
+	"exclude": [
+		"node_modules/**",
+		"web_modules/**"
+	]
 }
