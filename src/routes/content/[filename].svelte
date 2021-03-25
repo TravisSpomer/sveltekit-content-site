@@ -10,8 +10,8 @@
 		// So limited compared to Next.js!
 
 		const { filename } = page.params
-		// PROBLEM: This doesn't work if you remove the "http://localhost:3000"!
-		const data = (await (await fetch(`http://localhost:3000/api/content/${filename}`)).json())
+		// PROBLEM: This doesn't work if you remove the "http://localhost"!
+		const data = (await (await fetch(`http://localhost/api/content/${filename}`)).json())
 		const { properties, html } = data
 		return { props: { title: properties.title || filename, html } }
 	}
