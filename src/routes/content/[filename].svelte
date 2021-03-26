@@ -8,6 +8,10 @@
 		const { properties, html } = data
 		return { props: { title: properties.title || filename, html } }
 	}
+
+	// Not actually necessary since we're using adapter-static. It'd be nice to be able to indicate that
+	// this page/component should be FULLY prerendered into an HTML string.
+	export const prerender = true
 </script>
 
 <script lang="ts">
