@@ -20,6 +20,8 @@ jobs:
         node-version: 12.x
 
     - name: Build the static site
+      env:
+        BASE_URL: /sveltekit-content-site
       run: |
         npm ci
         npm run build
