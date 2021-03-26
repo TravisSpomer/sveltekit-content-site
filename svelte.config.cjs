@@ -11,13 +11,16 @@ module.exports = {
 	],
 	preprocess: [
 		mdsvex(mdsvexConfig),
-		sveltePreprocess()
+		sveltePreprocess(),
 	],
 	kit: {
 		adapter: adapterStatic(),
+		paths: {
+			base: process.env.BASE_URL || "",
+		},
 		vite: {
 			ssr: {
-				noExternal: Object.keys(pkg.dependencies || {})
+				noExternal: Object.keys(pkg.dependencies || {}),
 			}
 		}
 	}
