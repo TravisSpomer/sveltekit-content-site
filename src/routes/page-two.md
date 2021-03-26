@@ -11,7 +11,7 @@ title: Page two
 
 Creating a second page is as easy as 1-2-...
 
-This page was written in Markdown and transformed with MDSVEX. I can even put Svelte components in here.
+This page was written in Markdown and transformed with MDsveX. I can even put Svelte components in here.
 
 <Counter />
 
