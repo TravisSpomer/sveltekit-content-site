@@ -1,11 +1,21 @@
 <script lang="ts">
+	import { base } from '$app/paths'
 	import Year from "$lib/components/Year.svelte"
 </script>
+
+<svelte:head>
+	<!--<link rel="stylesheet" href="/global.css" />-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" /> 
+	<link rel="icon" href="{base}/images/app/logo.svg" />
+	<link rel="mask-icon" href="{base}/images/app/logo-mask.svg" color="#4f9adc" />
+	<link rel="apple-touch-icon" href="{base}/images/app/logo-solid180.png" />
+	<!--<link rel="manifest" href="{base}/app.webmanifest" />-->
+</svelte:head>
 
 <header>
 <div><nav>
 	<ul>
-		<li><a href="/">SvelteKit test site</a></li>
+		<li><a href="{base}/">SvelteKit test site</a></li>
 	</ul>
 </nav></div>
 </header>
