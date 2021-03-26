@@ -781,7 +781,7 @@ aside.info, aside.warning, aside.danger
 	}
 }
 
-code, pre, samp
+:not(pre) > code, pre, samp
 {
 	padding: .2em .4em .2em .4em;
 
