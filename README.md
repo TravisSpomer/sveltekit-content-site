@@ -2,7 +2,8 @@
 
 Wherein Travis tries out [SvelteKit](https://kit.svelte.dev/docs) for a pretty basic static content site scenario. It shows off:
 
-* A couple of very simple Svelte custom components
+* A few simple Svelte custom components
+	* `Draggable` which lets you easily make elements draggable with the mouse
 	* `Year` which lets you specify a year range, like `© <Year from={1980} />` → `© 1980-2021`
 	* `Counter` (which comes with the SvelteKit template)
 * TypeScript integration
