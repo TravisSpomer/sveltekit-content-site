@@ -6,8 +6,8 @@ on:
     branches: [ main ]
 
 jobs:
-  process-tokens:
-    name: Process tokens
+  publish:
+    name: Publish site
     runs-on: ubuntu-latest
 
     steps:
