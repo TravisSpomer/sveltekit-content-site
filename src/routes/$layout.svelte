@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { base } from '$app/paths'
 	import Year from "$lib/components/Year.svelte"
+
+	// The links below really belong in app.html, but I've moved them here to show an example of using the base path.
+	// (On the default GitHub Pages deployment, the whole site goes in a subfolder, so all of the root-relative links in the site break.)
 </script>
 
 <svelte:head>
