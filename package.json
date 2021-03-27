@@ -3,9 +3,9 @@
 	"version": "0.0.1",
 	"private": true,
 	"devDependencies": {
-		"@sveltejs/adapter-node": "next",
-		"@sveltejs/adapter-static": "next",
-		"@sveltejs/kit": "next",
+		"@sveltejs/adapter-node": "^1.0.0-next.10",
+		"@sveltejs/adapter-static": "^1.0.0-next.4",
+		"@sveltejs/kit": "^1.0.0-next.61",
 		"@types/markdown-it": "^12.0.1",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",
@@ -18,7 +18,7 @@
 		"svelte": "^3.35.0",
 		"svelte-preprocess": "^4.6.9",
 		"tslib": "^2.1.0",
-		"typescript": "latest",
+		"typescript": "^4.2.3",
 		"vite": "^2.1.2"
 	},
 	"type": "module",
