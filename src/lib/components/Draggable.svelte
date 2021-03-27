@@ -1,5 +1,6 @@
 ﻿<script lang="ts">
 	import { onMount } from "svelte"
+	import { browser } from "$app/env"
 
 	export let dragHandle: string
 	export let setClassesOn: string | undefined = undefined
@@ -7,7 +8,7 @@
 	let _root: HTMLElement
 	let _left: string = "0", _top: string = "0", _width: string = "300px", _height: string = "200px"
 
-	onMount(async () =>
+	if (browser) onMount(async () =>
 	{
 		const { makeDraggable } = await import("$lib/draggable")
 
