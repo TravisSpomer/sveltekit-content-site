@@ -4,6 +4,7 @@
 	import Year from "$lib/components/Year.svelte"
 
 	// Importing app.scss here inlines it into the layout's JavaScript, so you get a FOUC. :(
+	// It appears that this behavior is planned to be improved: https://github.com/sveltejs/kit/issues/11
 
 	// The links below really belong in app.html, but I've moved them here to show an example of using the base path.
 	// (On the default GitHub Pages deployment, the whole site goes in a subfolder, so all of the root-relative links in the site break.)
