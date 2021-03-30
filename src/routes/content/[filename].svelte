@@ -1,6 +1,8 @@
 <script context="module" lang="ts">
 	import type { LoadInput, LoadOutput } from "@sveltejs/kit/types.internal"
 
+	// I wouldn't really recommend this, but it does work, even for static builds.
+	// It seems that the proper thing to do for cases like this is to build a SvelteKit-specific plugin, which already exists for this case as MDxveX.
 	export async function load({ page, fetch }: LoadInput): Promise<LoadOutput>
 	{
 		const filename = page.params.filename
