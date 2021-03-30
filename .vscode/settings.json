@@ -5,13 +5,12 @@
 	"editor.insertSpaces": false,
 	"files.exclude": {
 		".github": true,
+		".svelte": true,
 		".vs": true,
 		".vscode": true,
 		".yarn": true,
 		"build/": true,
-		"node_modules/": true,
-		"web_modules/": true,
-		".pnp.js": true
+		"node_modules/": true
 	},
 	"eslint.format.enable": true,
 	"eslint.lintTask.enable": true,
