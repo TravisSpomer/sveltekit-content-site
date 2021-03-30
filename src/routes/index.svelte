@@ -13,6 +13,3 @@
 <p>
 	Now visit <a href="page-two">page two</a> when you're ready to have your <strong>MIND BLOWN</strong>.
 </p>
-<p>
-	Or just jump directly to some <a href="content/page-three">Markdown content in a dynamic route</a>.
-</p>
