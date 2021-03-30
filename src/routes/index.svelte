@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Counter from "$lib/components/Counter.svelte"
-	import DraggableWidget from "$lib/components/DraggableWidget.svelte"
 </script>
 
 <svelte:head>
@@ -17,5 +16,3 @@
 <p>
 	Or just jump directly to some <a href="content/page-three">Markdown content in a dynamic route</a>.
 </p>
-
-<DraggableWidget title="Drag me!" />
