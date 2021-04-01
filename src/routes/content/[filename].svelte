@@ -11,9 +11,12 @@
 		return { props: { title: properties.title || filename, html } }
 	}
 
-	// Not actually necessary since we're using adapter-static. It'd be nice to be able to indicate that
-	// this page/component should be FULLY prerendered into an HTML string.
+	// Not actually necessary since we're using adapter-static.
 	export const prerender = true
+
+	// These pages don't ever need to be rehydrated on the client, so disable that here.
+	// This page/component should be FULLY prerendered into an HTML string.
+	export const hydrate = false
 </script>
 
 <script lang="ts">
