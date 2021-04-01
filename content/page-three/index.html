@@ -8,30 +8,22 @@
 
 
 
-<link rel="modulepreload" href="/sveltekit-content-site/_app/start-7bcbf786.js">
-			<link rel="modulepreload" href="/sveltekit-content-site/_app/chunks/index-0b2d560e.js">
-			<link rel="modulepreload" href="/sveltekit-content-site/_app/chunks/Year-07d665d8.js">
-			<link rel="modulepreload" href="/sveltekit-content-site/_app/pages/content/[filename].svelte-7f7a812b.js">
+<link rel="modulepreload" href="/sveltekit-content-site/_app/start-8116df21.js">
+			<link rel="modulepreload" href="/sveltekit-content-site/_app/chunks/vendor-2bd7ec54.js">
+			<link rel="modulepreload" href="/sveltekit-content-site/_app/chunks/Year-1b6aa4f7.js">
+			<link rel="modulepreload" href="/sveltekit-content-site/_app/pages/content/[filename].svelte-1864726f.js">
 			<link rel="stylesheet" href="/sveltekit-content-site/_app/assets/start-56d740c3.css">
 
 
 		<script type="module">
-			import { start } from "/sveltekit-content-site/_app/start-7bcbf786.js";
+			import { start } from "/sveltekit-content-site/_app/start-8116df21.js";
 			start({
 				target: document.body,
 				paths: {"base":"/sveltekit-content-site","assets":"/sveltekit-content-site"},
-				status: 200,
-				error: null,
 				session: {},
-				nodes: [
-					import("/sveltekit-content-site/_app/pages/content/[filename].svelte-7f7a812b.js")
-				],
-				page: {
-					host: "location.host",
-					path: "/content/page-three",
-					query: new URLSearchParams(""),
-					params: {"filename":"page-three"}
-				}
+				host: location.host,
+				route: true,
+				hydrate: null
 			});
 		</script>
 </head>
@@ -54,7 +46,7 @@
 
 
 
-	<script type="svelte-data" url="/api/content/page-three">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"properties\":{\"title\":\"Page three\"},\"html\":\"<h1>The third page</h1>\\n<p>This <strong>Markdown</strong> content came from <code>page-three.md</code>!</p>\\n\"}"}</script>
+	<script type="svelte-data" url="/api/content/page-three">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"properties\":{\"title\":\"Page three\"},\"html\":\"\u003Ch1\u003EThe third page\u003C\u002Fh1\u003E\\n\u003Cp\u003EThis \u003Cstrong\u003EMarkdown\u003C\u002Fstrong\u003E content came from \u003Ccode\u003Epage-three.md\u003C\u002Fcode\u003E!\u003C\u002Fp\u003E\\n\"}"}</script>
 
 </body>
 </html>

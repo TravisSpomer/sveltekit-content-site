@@ -8,30 +8,34 @@
 
 
 
-<link rel="modulepreload" href="/sveltekit-content-site/_app/start-7bcbf786.js">
-			<link rel="modulepreload" href="/sveltekit-content-site/_app/chunks/index-0b2d560e.js">
-			<link rel="modulepreload" href="/sveltekit-content-site/_app/chunks/Year-07d665d8.js">
-			<link rel="modulepreload" href="/sveltekit-content-site/_app/pages/index.svelte-9aedded1.js">
+<link rel="modulepreload" href="/sveltekit-content-site/_app/start-8116df21.js">
+			<link rel="modulepreload" href="/sveltekit-content-site/_app/chunks/vendor-2bd7ec54.js">
+			<link rel="modulepreload" href="/sveltekit-content-site/_app/chunks/Year-1b6aa4f7.js">
+			<link rel="modulepreload" href="/sveltekit-content-site/_app/pages/index.svelte-e0518782.js">
 			<link rel="stylesheet" href="/sveltekit-content-site/_app/assets/start-56d740c3.css">
 			<link rel="stylesheet" href="/sveltekit-content-site/_app/assets/pages/index.svelte-d0bee2c1.css">
 
 
 		<script type="module">
-			import { start } from "/sveltekit-content-site/_app/start-7bcbf786.js";
+			import { start } from "/sveltekit-content-site/_app/start-8116df21.js";
 			start({
 				target: document.body,
 				paths: {"base":"/sveltekit-content-site","assets":"/sveltekit-content-site"},
-				status: 200,
-				error: null,
 				session: {},
-				nodes: [
-					import("/sveltekit-content-site/_app/pages/index.svelte-9aedded1.js")
-				],
-				page: {
-					host: "location.host",
-					path: "/",
-					query: new URLSearchParams(""),
-					params: {}
+				host: location.host,
+				route: true,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/sveltekit-content-site/_app/pages/index.svelte-e0518782.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
 				}
 			});
 		</script>
